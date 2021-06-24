@@ -67,7 +67,7 @@ public class VLogKnowledgeBase {
 
 	private final Map<Predicate, List<Fact>> directEdbFacts = new HashMap<>();
 
-	private final Set<Rule> rules = new HashSet<>();
+	private final List<Rule> rules = new ArrayList<>();
 
 	/**
 	 * Package-protected constructor, that organizes given {@code knowledgeBase} in
@@ -154,7 +154,7 @@ public class VLogKnowledgeBase {
 		return this.directEdbFacts;
 	}
 
-	Set<Rule> getRules() {
+	List<Rule> getRules() {
 		return this.rules;
 	}
 
